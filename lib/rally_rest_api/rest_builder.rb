@@ -87,7 +87,7 @@ class RestBuilder # :nodoc:
     debug "RestBuilder#create_rest artifact_type = #{type}"
     b = create_builder
     xml = b.__send__(type, &builder_block(args))
-    sleep(2)
+    sleep(3)
 
     result = post_xml("#{self.base_url}/webservice/#{@version}/#{type}/create", xml, username, password)
     doc = REXML::Document.new result
@@ -107,7 +107,7 @@ class RestBuilder # :nodoc:
     b = create_builder
     # and pass that to the builder
     xml = b.__send__(artifact_type, :ref => url, &builder_block(args))
-    sleep(2)
+    sleep(3)
     post_xml(url, xml, username, password)
   end
 

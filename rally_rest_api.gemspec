@@ -5,7 +5,7 @@ require 'rally_rest_api/version'
 
 Gem::Specification.new do |s|  
   s.name        = "rally_rest_api"
-  s.version     = Bundler::VERSION
+  s.version     = RallyRestVersion::LIBRARY_VERSION::STRING
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["bob.cotton@rallydev.com"]
   s.email       = ["bob.cotton@rallydev.com"]
