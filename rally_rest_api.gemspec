@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.name        = "rally_rest_api"
   s.version     = Bundler::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = []
+  s.authors     = ["bob.cotton@rallydev.com"]
   s.email       = ["bob.cotton@rallydev.com"]
   s.summary     = "A Ruby interface to the Rally REST API" 
 
