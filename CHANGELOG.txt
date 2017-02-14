@@ -1,0 +1,30 @@
+2010-08-03 Alan Brockett  <abrockett@rallydev.com>
+    * lib/rally_rest_api/rest_builder.rb: added :artifacts and :change_sets to COLLECTION_TYPES
+
+2010-01-07  Alan Brockett  <abrockett@rallydev.com>
+    * Removed puts from rest_builder.rb
+    * Rewrote underscore method in rest_object.rb to correctly handle strings like CQDefectID
+    * Added check in query.rb to raise exception if fetch is anything but true or false
+    * Added query_validation_spec.rb to test query.rb changes
+    
+2009-08-11  Alan Brockett  <abrockett@rallydev.com>
+
+    * lib/rally_rest_api/rest_builder.rb: Added :tags to COLLECTION_TYPES
+
+    * lib/rally_rest_api/query_result.rb: 
+    * lib/rally_rest_api/typedef.rb
+		Replaced "when condition : action" with "when condition then action"
+		for compatibility with Ruby 1.9
+		
+    * lib/rally_rest_api/version.rb : Changed version to 1.0.0
+
+2006-11-28  Bob Cotton  <bcotton@england.f4tech.com>
+
+	* Rakefile: Changed version package
+
+	* lib/rally_rest_api/query_result.rb: Fixed paging with each operator
+
+2006-11-27  Bob Cotton  <bcotton@england.f4tech.com>
+
+	* lib/rally_rest_api/query.rb: Added docs.
+
